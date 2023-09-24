@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <section class="about">
+    <section class="about" id="about">
         <h2 class="about-heading">About Me</h2>
 
         <div class="about-content">
@@ -44,7 +44,7 @@
                 </div>
 
                 <div class="profile-text">
-                    <p>As a student finishing up my senior year of computer science, my studies through the various spheres
+                    <p>As a student finishing up my senior year of computer science, my studies through the different topics
                         of software engineering led me to discover my deep rooted passion for web development. The
                         constantly emerging new technologies and frameworks only
                         drive my passion further and make me look forward to being a lifelong student.
@@ -113,12 +113,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .about-heading {
     font-size: 4em;
     padding-top: 1em;
     font-weight: 900;
+    position: relative;
+    z-index: 9999;
 }
 
 .about-content {
@@ -197,5 +200,6 @@
     left: 4.5rem;
     top: 5rem;
     z-index: -1;
+    position: relative;
 }
 </style>

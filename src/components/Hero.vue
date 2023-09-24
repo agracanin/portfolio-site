@@ -1,14 +1,15 @@
 <script setup>
-
+import HeroCanvas from './HeroCanvas.vue';
 </script>
 
 <template>
-    <div class="hero">
+    <div class="hero" id="home">
+        <HeroCanvas />
         <div class="heading-container">
             <h1 class="heading line1">Hello, I'm <span>Alen.</span></h1>
-            <h1 class="heading line2">I'm a full stack web developer.</h1>
+            <h1 class="heading line2">Front-end web developer.</h1>
         </div>
-        <a href="">
+        <a href="#about">
             <button class="heading-button">View my work
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="#ff4d5a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -23,6 +24,8 @@
 
 <style scoped>
 .hero {
+    position: relative;
+    z-index: 99999;
     display: flex;
     height: 100vh;
     width: 100%;
@@ -32,8 +35,11 @@
 }
 
 .heading {
-    font-weight: 400;
+    font-weight: 300;
     text-align: center;
+    position: relative;
+    z-index: 999;
+    font-size: 4em;
 }
 
 h1>span {
@@ -44,12 +50,23 @@ h1>span {
     background: none;
     display: flex;
     align-items: center;
-    padding: 0.3em 1.5em;
+    padding: 0.5em 1.3em;
     outline: none;
     border: 2px solid #ff4d5a;
     color: #ff4d5a;
     cursor: pointer;
     font-size: 1.4em;
+    transition: 0.2s ease-in-out;
+    transition-property: transform, background-color, color;
+    border-radius: 5px;
+}
+
+.heading-button:hover,
+.heading-button:hover>svg {
+    transform: scale(1.1);
+    background-color: #ff4d5a;
+    color: #fafafa;
+    stroke: #fafafa;
 }
 
 svg {
@@ -59,5 +76,7 @@ svg {
 a {
     text-decoration: none;
     margin-top: 1em;
+    position: relative;
+    z-index: 9999;
 }
 </style>

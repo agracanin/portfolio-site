@@ -16,3 +16,7 @@ body {
   color: #fafafa;
   font-family: montserrat, sans-serif;
 }
+
+.active {
+  color: #ff4d5a;
+}
