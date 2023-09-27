@@ -42,12 +42,11 @@ section {
 section>h2:before {
   content: '';
   border-bottom: 23px solid #ff4d5a;
-  width: 20rem;
+  width: 15rem;
   display: block;
   margin: 0 auto;
   position: relative;
-  left: 4.5rem;
+  left: 2.5rem;
   top: 5rem;
   z-index: -1;
-  position: relative;
 }

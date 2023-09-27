@@ -107,23 +107,6 @@
 </template>
 
 <style scoped>
-/* .about {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-} */
-
-/* .about-heading {
-    font-size: 4em;
-    padding-top: 1em;
-    font-weight: 900;
-    position: relative;
-    z-index: 9999;
-} */
-
 .about-content {
     display: flex;
     justify-content: space-around;
@@ -132,7 +115,6 @@
 }
 
 .profile {
-    width: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -189,17 +171,4 @@
     height: 60px;
     width: auto;
 }
-
-/* .about-heading:before {
-    content: '';
-    border-bottom: 23px solid #ff4d5a;
-    width: 20rem;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    left: 4.5rem;
-    top: 5rem;
-    z-index: -1;
-    position: relative;
-} */
 </style>

@@ -4,6 +4,7 @@ import Navbar from './components/Navbar.vue';
 import About from './components/About.vue';
 import BackgroundCanvas from './components/BackgroundCanvas.vue';
 import Projects from './components/Projects.vue';
+import Contact from './components/Contact.vue';
 
 </script>
 
@@ -13,6 +14,7 @@ import Projects from './components/Projects.vue';
   <BackgroundCanvas />
   <About />
   <Projects />
+  <Contact />
 </template>
 
 <style scoped></style>

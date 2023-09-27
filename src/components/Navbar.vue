@@ -21,10 +21,18 @@ onMounted(() => {
 <template>
     <nav class="nav-bar">
         <ul class="navigation">
-            <li class="nav-item" :class="{ active: activeSection === 'home' }">Home</li>
-            <li class="nav-item" :class="{ active: activeSection === 'about' }">About</li>
-            <li class="nav-item" :class="{ active: activeSection === 'projects' }">Projects</li>
-            <li class="nav-item" :class="{ active: activeSection === 'contact' }">Contact</li>
+            <a href="#home">
+                <li class="nav-item" :class="{ active: activeSection === 'home' }">Home</li>
+            </a>
+            <a href="#about">
+                <li class="nav-item" :class="{ active: activeSection === 'about' }">About</li>
+            </a>
+            <a href="#projects">
+                <li class="nav-item" :class="{ active: activeSection === 'projects' }">Projects</li>
+            </a>
+            <a href="#contact">
+                <li class="nav-item" :class="{ active: activeSection === 'contact' }">Contact</li>
+            </a>
         </ul>
     </nav>
 </template>
@@ -60,5 +68,10 @@ onMounted(() => {
 
 .nav-item:hover {
     color: #ff4d5a;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 </style>
