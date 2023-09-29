@@ -6,28 +6,44 @@
         <h2>Projects</h2>
         <div class="project-container project-left">
             <div class="project-display">
-                <h1>PLACEHOLDER</h1>
+                <img src="../assets/images/etch-a-sketch.png" alt="Project image">
             </div>
             <div class="project-details">
-                <h3 class="project-title">Weather App</h3>
-                <p class="project-desc">Built a Weather App using OpenWeather API with asynchronous JavaScript</p>
+                <h3 class="project-title">Etch A Sketch</h3>
+                <p class="project-desc">Create pixel art using a variety of features and colors! Made with JavaScript, HTML
+                    and CSS.</p>
                 <div class="project-buttons">
-                    <a href="" class="project-link live-demo">VIEW LIVE</a>
-                    <a href="" class="project-link live-demo">VIEW SOURCE</a>
+                    <a href="https://agracanin.github.io/etch-a-sketch/" class="project-link">VIEW LIVE</a>
+                    <a href="https://github.com/agracanin/etch-a-sketch" class="project-link">VIEW SOURCE</a>
                 </div>
             </div>
         </div>
         <div class="project-container project-right">
             <div class="project-details">
                 <h3 class="project-title">Weather App</h3>
-                <p class="project-desc">Built a Weather App using OpenWeather API with asynchronous JavaScript</p>
+                <p class="project-desc">A Weather App that uses WeatherAPI with asynchronous JavaScript to fetch the
+                    current forecast of an entered location.</p>
                 <div class="project-buttons">
-                    <a href="" class="project-link live-demo">VIEW LIVE</a>
-                    <a href="" class="project-link live-demo">VIEW SOURCE</a>
+                    <a href="https://agracanin.github.io/weather-app/" class="project-link">VIEW LIVE</a>
+                    <a href="https://github.com/agracanin/weather-app" class="project-link">VIEW SOURCE</a>
                 </div>
             </div>
             <div class="project-display">
-                <h1>PLACEHOLDER</h1>
+                <img src="../assets/images/weatherapp.png" alt="Project image">
+            </div>
+        </div>
+        <div class="project-container project-left">
+            <div class="project-display">
+                <img src="../assets/images/calculator.png" alt="Project image">
+            </div>
+            <div class="project-details">
+                <h3 class="project-title">Calculator App</h3>
+                <p class="project-desc">A basic calculator with basic arithmetic operations, decimal
+                    inputs, and a user-friendly interface that supports both mouse clicks and keyboard inputs.</p>
+                <div class="project-buttons">
+                    <a href="https://agracanin.github.io/Calculator/" class="project-link">VIEW LIVE</a>
+                    <a href="https://github.com/agracanin/Calculator" class="project-link">VIEW SOURCE</a>
+                </div>
             </div>
         </div>
     </section>
@@ -57,6 +73,7 @@ section>h2 {
 
 .project-title {
     font-size: 2em;
+    color: #ff4d5a;
 }
 
 .project-display {
@@ -108,9 +125,9 @@ section>h2 {
     box-shadow: inset 0 -100px 0 -1px #ff4d5a;
 }
 
-.project-img {
-    width: 90%;
-    height: 90%;
+img {
+    width: 80%;
+    height: 80%;
     object-fit: cover;
 }
 
@@ -119,6 +136,12 @@ section>h2 {
     .project-display {
         width: 65%;
         height: 30vh;
+        background-color: transparent;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
     }
 
     .project-display>h1 {
@@ -127,14 +150,29 @@ section>h2 {
 
     .project-details {
         width: 35%;
+        background-color: rgba(26, 26, 26, 0.5);
+    }
+
+    .project-link {
+        font-size: 12px;
     }
 
     .project-title {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .project-desc {
         font-weight: 500;
+        font-size: 12px;
+    }
+
+    .project-left>.project-details {
+        transform: translateX(-20%);
+        padding-left: 5px;
+    }
+
+    .project-right>.project-details {
+        transform: translateX(15%);
     }
 }
 
