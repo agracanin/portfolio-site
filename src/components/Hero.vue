@@ -9,15 +9,15 @@ import HeroCanvas from './HeroCanvas.vue';
             <h1 class="heading line1">Hello, I'm <span>Alen.</span></h1>
             <h1 class="heading line2">Front-end web developer.</h1>
         </div>
-        <a href="#about">
-            <button class="heading-button">View my work
+        <a class="heading-button" href="#about">View My Work
+            <!-- <button class="heading-button">VIEW MY WORK
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="#ff4d5a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="feather feather-arrow-down">
                     <line x1="12" y1="5" x2="12" y2="19"></line>
                     <polyline points="19 12 12 19 5 12"></polyline>
                 </svg>
-            </button>
+            </button> -->
         </a>
     </div>
 </template>
@@ -66,6 +66,7 @@ h1>span {
     color: #ff4d5a;
     cursor: pointer;
     font-size: 1.4em;
+    font-weight: 500;
     transition: 0.2s ease-in-out;
     transition-property: transform, background-color, color;
     border-radius: 5px;
@@ -126,6 +127,22 @@ a {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 840px) {
+    .heading {
+        font-size: 2.6em;
+    }
+}
+
+@media(max-width: 650px) {
+    .heading {
+        font-size: 1.8em;
+    }
+
+    .hero>a {
+        font-size: 1em;
     }
 }
 </style>

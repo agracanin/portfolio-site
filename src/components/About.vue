@@ -44,13 +44,11 @@
                 </div>
 
                 <div class="profile-text">
-                    <p>As a student finishing up my senior year of computer science, my studies through the different topics
-                        of software engineering led me to discover my deep rooted passion for web development. The
-                        constantly emerging new technologies and frameworks only
-                        drive my passion further and make me look forward to being a lifelong student.
-
-                        When I am away from the screen, my time is spent at school, reading books, exercising and spending
-                        time with my loved ones.</p>
+                    <p>From early childhood, technology captivated me. Pursuing my bachelor's in computer science not only
+                        unearthed my passion for software engineering but it also gave me a love for lifelong learning.
+                        Venturing into web development, I discovered my avenue for providing value to the world through
+                        something I deeply love and enjoy. Away from the computer, I devote my time to school, reading,
+                        exercising and cherishing moments with my loved ones.</p>
                 </div>
             </div>
 

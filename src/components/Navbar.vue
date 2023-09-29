@@ -12,7 +12,7 @@ onMounted(() => {
                 activeSection.value = entry.target.id;
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.3 });
 
     sections.forEach(section => observer.observe(section));
 });

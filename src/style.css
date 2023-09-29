@@ -51,24 +51,7 @@ section>h2:before {
   z-index: -1;
 }
 
-@media (max-width: 840px) {
-  .hero {
-    font-size: 0.8em;
-  }
-}
-
 @media(max-width: 650px) {
-  .hero {
-    font-size: 0.4em;
-  }
-
-  .hero>a {
-    font-size: 10px;
-  }
-
-  .feather-arrow-down {
-    display: none;
-  }
 
   section>h2 {
     font-size: 2em;
