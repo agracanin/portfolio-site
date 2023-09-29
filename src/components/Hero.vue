@@ -40,6 +40,16 @@ import HeroCanvas from './HeroCanvas.vue';
     position: relative;
     z-index: 999;
     font-size: 4em;
+    animation-duration: 1.4s;
+    animation-timing-function: cubic-bezier(0.20, 1, 0.8, 1)
+}
+
+.line1 {
+    animation-name: leftStart;
+}
+
+.line2 {
+    animation-name: rightStart;
 }
 
 h1>span {
@@ -59,6 +69,9 @@ h1>span {
     transition: 0.2s ease-in-out;
     transition-property: transform, background-color, color;
     border-radius: 5px;
+    animation: bottomStart 0.7s 1.2s;
+    animation-fill-mode: backwards;
+    animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
 }
 
 .heading-button:hover,
@@ -78,5 +91,41 @@ a {
     margin-top: 1em;
     position: relative;
     z-index: 9999;
+}
+
+@keyframes leftStart {
+    0% {
+        opacity: 0%;
+        transform: translateX(-10em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightStart {
+    0% {
+        opacity: 0%;
+        transform: translateX(10em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bottomStart {
+    0% {
+        opacity: 0;
+        transform: translateY(4rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 </style>

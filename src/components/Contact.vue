@@ -23,11 +23,11 @@
 }
 
 .contact-form {
-    width: 500px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 0.5em;
+    gap: 0.75em;
 }
 
 input,
@@ -48,9 +48,9 @@ textarea {
 }
 
 .contact-bio {
-    width: 500px;
+    width: 600px;
     font-size: 1.1em;
-    margin: 1em 0em 2em 0em;
+    margin: 1.5em 0em 1.5em 0em;
 }
 
 .submit-btn {
