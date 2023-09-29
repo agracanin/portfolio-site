@@ -74,4 +74,22 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+
+@media (max-width: 840px) {
+    .nav-bar {
+        justify-content: center;
+        font-size: 0.8em;
+    }
+
+    .navigation {
+        padding-right: 0;
+    }
+}
+
+@media(max-width: 650px) {
+    .nav-bar {
+        font-size: 0.7em;
+    }
+}
 </style>

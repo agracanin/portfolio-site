@@ -111,7 +111,6 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    padding-top: 4em;
 }
 
 .profile {
@@ -170,5 +169,31 @@
 .skill-png {
     height: 60px;
     width: auto;
+}
+
+@media(max-width: 650px) {
+    .skill-item {
+        height: 50px;
+        width: 80px;
+        font-size: 0.5em;
+    }
+
+    .skill-png {
+        height: 26px;
+    }
+
+    .profile {
+        width: 100%
+    }
+
+    .profile-text {
+        font-weight: 100;
+        padding: 0 2em;
+    }
+
+    .profile-picture {
+        height: 13em;
+        padding-top: 2em
+    }
 }
 </style>

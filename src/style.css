@@ -23,7 +23,6 @@ body {
 
 section>h2 {
   font-size: 4em;
-  padding-top: 1em;
   font-weight: 900;
   position: relative;
   z-index: 9999;
@@ -37,6 +36,7 @@ section {
   align-items: center;
   justify-content: center;
   position: relative;
+  padding-top: 2em;
 }
 
 section>h2:before {
@@ -49,4 +49,52 @@ section>h2:before {
   left: 2.5rem;
   top: 5rem;
   z-index: -1;
+}
+
+@media (max-width: 840px) {
+  .hero {
+    font-size: 0.8em;
+  }
+}
+
+@media(max-width: 650px) {
+  .hero {
+    font-size: 0.4em;
+  }
+
+  .hero>a {
+    font-size: 10px;
+  }
+
+  .feather-arrow-down {
+    display: none;
+  }
+
+  section>h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  section>h2:before {
+    border-bottom: 18px solid #ff4d5a;
+    width: 9rem;
+    left: 1.5rem;
+    top: 3rem;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+
+
+@media (max-width: 1200px) {
+  .about-content {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 4em;
+    padding-bottom: 4em;
+  }
 }

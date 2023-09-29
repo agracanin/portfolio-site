@@ -68,4 +68,26 @@ textarea {
 .submit-btn:hover {
     box-shadow: inset 0 -100px 0 -1px #ff4d5a;
 }
+
+@media (max-width: 650px) {
+
+    .contact {
+        min-height: fit-content;
+        padding-bottom: 2em;
+    }
+
+    .contact-bio,
+    .contact-form {
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .contact-form {
+        gap: 1em;
+    }
+
+    .contact-bio {
+        margin: 1.5em 0 1.5em 0;
+    }
+}
 </style>
