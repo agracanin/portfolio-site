@@ -2,6 +2,7 @@
 import { reactive, ref, toRef } from 'vue';
 import { useVuelidate } from '@vuelidate/core';
 import { required, email, minLength, maxLength } from '@vuelidate/validators';
+import axios from 'axios';
 
 const setupValidation = () => {
     const form = reactive({
@@ -27,14 +28,23 @@ const setupValidation = () => {
 
 const state = ref(setupValidation());
 
-const onSubmit = () => {
+const onSubmit = async () => {
     state.value.vv.$touch();
 
     if (state.value.vv.$invalid) return;
 
-    alert("Form submitted");
+    const formData = new FormData();
+    formData.append('name', state.value.form.name);
+    formData.append('email', state.value.form.email);
+    formData.append('message', state.value.form.message);
 
-    // Reset validation and form data
+    try {
+        await axios.post('https://formspree.io/f/xwkdwldo', formData);
+        alert('Thank you for contacting me, I will get back to you within 24 hours.');
+    } catch (error) {
+        console.error('There was an error submitting the form:', error);
+    }
+
     state.value = setupValidation();
 }
 
@@ -46,7 +56,8 @@ const onSubmit = () => {
         <p class="contact-bio">Have a question or want to work together? Leave your details and I will get back to you as
             soon as
             possible.</p>
-        <form class="contact-form" @submit.prevent="onSubmit" novalidate>
+        <form class="contact-form" action="https://formspree.io/f/xwkdwldo" method="POST" @submit.prevent="onSubmit"
+            novalidate>
             <input type="text" name="name" v-model="state.form.name" placeholder="Your name"
                 :class="{ 'invalid': state.vv.name.$error }">
             <input type="email" name="email" v-model="state.form.email" placeholder="Email"
